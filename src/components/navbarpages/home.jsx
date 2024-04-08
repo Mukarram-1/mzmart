@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
 import Itemcard from "../itemcard";
-
+import { Link } from "react-router-dom";
 export default function Home() {
   useEffect(() => {
     document.title = "MZ Online Shopping!";
@@ -11,14 +11,14 @@ export default function Home() {
     <>
       <Navbar />
       <div className="laptop-predictor">
-      <h2 className="heading">
+      <h2 className="section-heading">
         Laptop Price Predictor Model
       </h2>
       <div className="image-container">
         <img src="./images/laptop.jpg" alt="Laptop" className="laptop-image" />
         <span className="new-tag">New</span>
-        <button className="predict-button">Predict Price</button>
-      </div>
+        <Link to="/pricepredictor"><button className="predict-button">Predict Price</button></Link>
+      </div> 
     </div>
       <h2 className="section-heading">Popular Items</h2>
       <div className="itemcards">

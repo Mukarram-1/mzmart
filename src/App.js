@@ -5,7 +5,7 @@ import Shop from "./components/navbarpages/shop";
 import Contact from "./components/navbarpages/contact";
 import About from "./components/navbarpages/about";
 import Blogs from "./components/navbarpages/blogs";
-
+import Pricepredictor from "./components/navbarpages/pricepredictor";
 function App() {
   return (
     <div className="App">
@@ -16,6 +16,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/pricepredictor" element={<Pricepredictor />} />
       </Routes>
     </div>
   );
