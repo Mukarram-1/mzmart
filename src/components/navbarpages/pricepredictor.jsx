@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import Navbar from '../navbar'
 import Footer from '../footer'
+import Predictform from '../predictform';
 
 export default function Pricepredictor() {
   useEffect(() => {
@@ -9,7 +10,8 @@ export default function Pricepredictor() {
   return (
     <>
     <Navbar/>
-    <div style={{fontSize:"5rem"}}>Laptop Price Prediction</div>
+    <h2 className="section-heading">Laptop Price Prediction</h2>
+    <Predictform/>
     <Footer/>
     </>
   )

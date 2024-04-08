@@ -641,9 +641,7 @@ padding: 20px;
   border-radius: 40px; /* Set border radius on hover */
 }
 
-.quantity {
-  /* Add any additional styles for the quantity display if needed */
-}
+
 .quickcart{
    background-color: #b50e0e;
    border: 10px solid  #b50e0e;
@@ -719,3 +717,5 @@ padding: 20px;
 /* .laptop-predictor:hover .image-container {
   filter: blur(5px);
 } */
+
+/* Predictor page */
