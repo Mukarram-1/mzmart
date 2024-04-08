@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <div className="laptop-predictor">
       <h2 className="section-heading">
-        Laptop Price Predictor Model
+        Laptop Price Model
       </h2>
       <div className="image-container">
         <img src="./images/laptop.jpg" alt="Laptop" className="laptop-image" />
