@@ -1,0 +1,35 @@
+/* Carousel.css */
+
+.carousel-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .shop-now-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .slick-arrow {
+    font-size: 24px;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+ 
