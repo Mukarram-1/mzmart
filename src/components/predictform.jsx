@@ -138,11 +138,12 @@ export default function Predictform() {
               {/* Add more options as needed */}
             </select>
           </div>
-          <button type="submit" className="predict-button">
-            Predict
-          </button>
+        
         </form>
       </div>
+     <div> <button type="submit" className="predict-button">
+            Predict Price
+          </button></div>
     </>
   );
 }

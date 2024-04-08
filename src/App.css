@@ -668,16 +668,56 @@ padding: 20px;
   text-align: center;
   position: relative;
 }
-
 .image-container {
   position: relative;
   display: inline-block;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden; /* Ensure the zoom effect doesn't overflow */
 }
 
-.laptop-image {
-  width: 100%; /* Adjust size as needed */
-  height: auto;
+/* Set initial scale for the image */
+.image-container img {
+  transition: transform 0.3s ease;
 }
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .image-container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .image-container {
+    max-width: 90%;
+  }
+}
+
+
+.laptop-image {
+  margin-bottom: 50px;
+  width: 100vw; /* Full width of the viewport */
+  height: auto;
+  max-height: 600px; /* Increased maximum height */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .laptop-image {
+    max-height: 450px; /* Adjust maximum height for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+  .laptop-image {
+    max-height: 300px; /* Adjust maximum height for even smaller screens */
+  }
+}
+
 
 .new-tag {
   position: absolute;
@@ -691,28 +731,24 @@ padding: 20px;
 }
 
 .predict-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #007bff; /* Blue */
-  color: white;
+  position: relative; /* Ensure button position is relative to its container */
+  display: block; /* Ensure button takes full width of its container */
+  margin: 10px auto; /* Center button horizontally and add space from top */
+  background-color: #98113e; /* Blue */
+  color: #ffffff; /* Black */
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s;
+  opacity: 1;
+  transition: background-color 0.3s;
 }
 
 .predict-button:hover {
-  background-color: #0056b3; /* Darker blue */
+  background-color: #520a22; /* Darker blue */
 }
 
-.image-container:hover .predict-button {
-  opacity: 1;
-}
 
 /* .laptop-predictor:hover .image-container {
   filter: blur(5px);
