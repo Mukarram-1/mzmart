@@ -10,8 +10,9 @@ export default function Pricepredictor() {
   return (
     <>
     <Navbar/>
-    <h2 className="section-heading">Laptop Price Prediction</h2>
+    
     <Predictform/>
+    
     <Footer/>
     </>
   )
